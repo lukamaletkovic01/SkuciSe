@@ -1,0 +1,16 @@
+package com.example.skucise.utils
+
+class Constrants {
+
+    companion object {
+<<<<<<< HEAD
+        
+        const val BASE_URL = "http://192.168.0.28:5435";
+=======
+
+        const val BASE_URL = "http://192.168.1.106:5435";
+>>>>>>> dev
+
+
+    }
+}

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivities.EditProductActivities.EditProductActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/pitanjeActivityThird"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@drawable/header"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/backDugme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="20dp"
+                    android:contentDescription="@string/todo"
+                    android:onClick="idiNazad"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-80dp"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="0dp"
+                    android:paddingRight="20dp"
+                    android:text="Izmena podataka nekretnine."
+                    android:textAlignment="textStart"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_nazivLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:hintTextColor="@color/cadeon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pitanjeActivityThird">
+
+                <EditText
+                    android:id="@+id/edit_naslov"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:background="@drawable/login_form_background"
+                    android:ems="20"
+                    android:fontFamily="@font/gilroy_light"
+                    android:hint="Naslov nekretnine"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/cadeon"
+                    android:textColorHint="@color/cadeon"
+                    app:met_floatingLabel="highlight"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_adresaLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:hintTextColor="@color/cadeon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_nazivLayout">
+
+                <EditText
+                    android:id="@+id/edit_adresa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:background="@drawable/login_form_background"
+                    android:ems="20"
+                    android:fontFamily="@font/gilroy_light"
+                    android:hint="Adresa nekretnine"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/cadeon"
+                    android:textColorHint="@color/cadeon"
+                    app:met_floatingLabel="highlight"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <RelativeLayout
+                android:id="@+id/relativ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/login_form_background"
+                app:layout_constraintTop_toBottomOf="@id/edit_adresaLayout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp">
+            <Spinner
+                android:id="@+id/editSpinnerGradovi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:prompt="@string/hint_resource"
+                android:spinnerMode="dialog"
+                />
+            </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_cenaLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:hintTextColor="@color/cadeon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/relativ">
+
+                <EditText
+                    android:id="@+id/edit_cena"
+                    android:layout_width="170dp"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:background="@drawable/login_form_background"
+                    android:ems="20"
+                    android:fontFamily="@font/gilroy_light"
+                    android:hint="Cena (€)"
+                    android:inputType="number"
+                    android:textColorHighlight="@color/cadeon"
+                    android:textColorHint="@color/cadeon"
+                    app:met_floatingLabel="highlight"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_new_opisLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:hintTextColor="@color/cadeon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_cenaLayout">
+
+                <EditText
+                    android:id="@+id/edit_opis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:background="@drawable/login_form_background"
+                    android:ems="20"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="top"
+                    android:hint="Opisite Vasu nekretninu u par reci/recenica."
+                    android:inputType="text|textMultiLine"
+                    android:maxLines="20"
+                    android:textColorHighlight="@color/cadeon"
+                    android:textColorHint="@color/cadeon"
+                    app:met_floatingLabel="highlight"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/edit_kucniRedLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                app:hintTextColor="@color/cadeon"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/add_new_opisLayout">
+
+                <EditText
+                    android:id="@+id/edit_kucniRed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="name"
+                    android:background="@drawable/login_form_background"
+                    android:ems="20"
+                    android:fontFamily="@font/gilroy_light"
+                    android:hint="Kucni red"
+                    android:inputType="text"
+                    android:textColorHighlight="@color/cadeon"
+                    android:textColorHint="@color/cadeon"
+                    app:met_floatingLabel="highlight"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/random_otkazi_pozadina"
+                android:fontFamily="@font/gilroy_bold"
+                android:onClick="idiNazad"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_kucniRedLayout"
+                android:layout_marginTop="20sp"
+                android:text="OTKAZI"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/random_dugme_pozadina"
+                android:fontFamily="@font/gilroy_bold"
+                android:onClick="idiNapred"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_kucniRedLayout"
+                android:layout_marginTop="20sp"
+                android:text="POTVRDI"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

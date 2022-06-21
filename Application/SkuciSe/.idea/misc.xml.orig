@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Aleksandar/Desktop/Skuci se/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_login_screen.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Aleksandar/Desktop/Skuci se/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_proba.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Korisnik/Desktop/git/Tim2/Application/SkuciSe/app/src/main/res/drawable/product_price_backround.xml" value="0.145" />
+        <entry key="..\:/Users/Korisnik/Desktop/git/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_product_page.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Korisnik/Desktop/git/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_product_page.xml" value="0.2" />
+        <entry key="..\:/Users/Korisnik/Desktop/git2/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_screen.xml" value="0.2234375" />
+        <entry key="..\:/Users/Korisnik/Desktop/git2/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_second.xml" value="0.264" />
+        <entry key="..\:/Users/Korisnik/Desktop/git2/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.2234375" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/drawable/arrow_background.xml" value="0.145" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/drawable/arrow_left.xml" value="0.1325" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/drawable/arrow_right.xml" value="0.1325" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/drawable/pickimages_backgroud.xml" value="0.136" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/drawable/zakazi_razgledanje_pozadina.xml" value="0.136" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_profile.xml" value="0.176" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_uspesan.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_home_screen.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_pictures_add.xml" value="0.8800000000000001" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_third_screen.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_screen.xml" value="0.19635416666666666" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_second.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.12552083333333333" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/drawer_header.xml" value="0.22760416666666666" />
+        <entry key="..\:/Users/Korisnik/Desktop/git3/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_profile.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Korisnik/Desktop/git4/Tim2/Application/SkuciSe/app/src/main/res/drawable/splash_screen_backround.xml" value="0.1125" />
+        <entry key="..\:/Users/Korisnik/Desktop/git4/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Korisnik/Desktop/git4/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/drawable/login_button_backround.xml" value="0.1635" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/drawable/login_form_background.xml" value="0.1635" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/drawable/register_screen_backround.xml" value="0.1635" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_home_screen.xml" value="0.1956521739130435" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_login_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_screen.xml" value="0.264" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_second.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.4" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_home.xml" value="0.13272543059777103" />
+        <entry key="..\:/Users/Korisnik/Desktop/pmu/Tim2/Application/SkuciSe/app/src/main/res/menu/menu.xml" value="0.2518518518518518" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/drawable/login_button_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/drawable/register_screen_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/drawable/splash_screen_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/layout-v26/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/layout/activity_login_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/AndroidStudioProjects/SkuciSe/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/final_rate_backround.xml" value="0.24722222222222223" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_home.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/drawable/register_screen_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_home_screen.xml" value="0.2" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_kalendar.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_menu.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_search.xml" value="0.152" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/item_nearby.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/item_nerby_shimmer.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/layout/jarvis_loader.xml" value="0.20742753623188406" />
+        <entry key="..\:/Users/dusan/Desktop/IV/Mobilni/Tim2/Application/SkuciSe/app/src/main/res/menu/menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/PONEDELJAK/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_second_screen.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/dusan/Desktop/PONEDELJAK/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_type.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/addons_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/final_rate_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/gradiend_backround_black.xml" value="0.2564814814814815" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/gradient_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_add_business_24.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_favorite_24.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_menu_24.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/ic_baseline_star_rate_24.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/item_add_new_product_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/item_add_new_product_backround_filled.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/meni_ikonica.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/product_price_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/profile_pic_navigation_bar.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/publication_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/radio_button_color_change.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/radio_button_selected.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/radio_button_text_changer.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/random_dugme_pozadina.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/random_dugme_senka.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/random_otkazi_pozadina.xml" value="0.2611111111111111" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/register_screen_backround.xml" value="0.2703125" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/review_item_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/round_button.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/senka.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/side_nav_bar.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/spinner_border.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/splash_screen_backround.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/stroke.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/drawable/zakazi_razgledanje_pozadina.xml" value="0.26615384615384613" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/font/gilroy_bold.xml" value="0.28" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_akcija_uspesna.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_product.xml" value="0.2" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_product_succeed.xml" value="0.11614583333333334" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_profile.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_edit_uspesan.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_favorites.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_home_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_login_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_forth_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_pictures_add.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_second_screen.xml" value="0.2" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_third_screen.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_new_real_estate_type.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_product_page.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_profile.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_realty_type.xml" value="0.2" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_received_reservations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_registration_second.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_reservation.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_reservation_welcome_screen.xml" value="0.2" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_search_filters.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_search_results.xml" value="0.24728260869565216" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_sent_reservations.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_welcome_screen.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/content_drawer.xml" value="0.2520833333333333" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/content_new_real_estate_type.xml" value="0.24094202898550723" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/drawer_header.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_edit_profile.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_first.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_home.xml" value="0.24470134874759153" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_product_page.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_reservation_on_hold.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_reservations_confirmed.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_reservations_rejected.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_search.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_sent_reservation_confirmed.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_sent_reservation_on_hold.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_sent_reservation_rejected.xml" value="0.12360688956433637" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_category.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_country.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_date.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_favorites.xml" value="0.24954710144927536" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_hour.xml" value="0.2513586956521739" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_my_property.xml" value="0.2269021739130435" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_nearby.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_raview.xml" value="0.2536231884057971" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_received_reservation.xml" value="0.264" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/layout/item_sent_reservation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/menu/drawer_menu.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/dusan/Desktop/Tim2/Application/SkuciSe/app/src/main/res/menu/menu.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_home_screen.xml" value="0.1" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_product_page.xml" value="0.1" />
+<<<<<<< HEAD
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_reservation_dialog.xml" value="0.1526268115942029" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/activity_start_compaign_dialog.xml" value="0.14628623188405798" />
+=======
+>>>>>>> dev
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/detail_field_view.xml" value="0.1" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/fragment_product_page.xml" value="0.1" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/item_nearby.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/jagod/Tim2/Application/SkuciSe/app/src/main/res/layout/item_raview.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

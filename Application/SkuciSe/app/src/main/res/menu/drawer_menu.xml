@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/oglasiNekretninu"
+            android:icon="@drawable/ic_baseline_add_business_24"
+            android:title="@string/oglasi_nekretninu"/>
+        <item
+            android:id="@+id/omiljeneNekretnine"
+            android:icon="@drawable/ic_baseline_favorite_24"
+            android:title="@string/omiljene_nekretnine"/>
+        <item
+            android:id="@+id/mojeNekretnine"
+            android:icon="@drawable/ic_baseline_home_24"
+            android:title="@string/moje_nekretnine"/>
+        <item
+            android:id="@+id/kalendarAktivnosti"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="@string/kalendar_aktivnosti"/>
+        <item
+            android:id="@+id/zahteviZaGledanje"
+            android:icon="@drawable/ic_baseline_preview_24"
+            android:title="@string/zahtevi_za_razgledanje"/>
+
+        <item
+            android:id="@+id/napisaneRecenzije"
+            android:icon="@drawable/ic_baseline_rate_review_24"
+            android:title="@string/recenzije"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:title="@string/podesavanja_i_pravne_informacije">
+            <menu>
+                <item
+                    android:id="@+id/podesavanja"
+                    android:icon="@drawable/ic_baseline_settings_24"
+                    android:title="@string/podesavanja"/>
+                <item
+                    android:icon="@drawable/ic_baseline_exit_to_app_24"
+                    android:id="@+id/logout"
+                    android:title="@string/izloguj_se"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>

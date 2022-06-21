@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivities.RecoveryActivities.RecoveryCodeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:paddingRight="30dp"
+            android:fontFamily="@font/gilroy_light"
+            android:paddingLeft="30dp"
+            android:text="Na email Vam je poslat kod."
+            android:textColor="@color/grey"
+            android:textSize="18dp"
+            android:layout_marginBottom="30dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="0dp"
+            android:paddingRight="30dp"
+            android:fontFamily="@font/gilroy_light"
+            android:paddingLeft="30dp"
+            android:text="Unesite kod za resetovanje lozinke."
+            android:textColor="@color/grey"
+            android:textSize="20sp"
+            android:layout_marginBottom="30dp">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintTextColor="@color/cadeon"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp">
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_light"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/login_form_background"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:hint="Kod"
+                android:textColorHighlight="@color/cadeon"
+                android:textColorHint="@color/cadeon"
+                app:met_floatingLabel="highlight"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/login_button_backround"
+            android:paddingLeft="80dp"
+            android:paddingRight="80dp"
+            android:text="Potvrdi"
+            android:onClick="recover"
+            android:fontFamily="@font/gilroy_light"
+            android:textColor="@color/white"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

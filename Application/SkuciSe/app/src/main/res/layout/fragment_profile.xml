@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.ProfileFragment">
+
+   <androidx.core.widget.NestedScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:paddingBottom="20sp">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/headerProfila"
+             android:layout_width="match_parent"
+             android:layout_height="320dp"
+             android:background="@drawable/gradient_backround"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/coverSlika"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="200dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+               <ImageView
+                   android:id="@+id/slikaProfila"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:scaleType="centerCrop" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text=""
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/coverSlika" />
+
+            <ImageView
+                android:id="@+id/settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:src="@drawable/ic_baseline_edit_24"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <androidx.constraintlayout.widget.ConstraintLayout
+             android:id="@+id/opsteInformacije"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="10sp"
+             android:layout_marginTop="-30dp"
+             android:layout_marginRight="10sp"
+             android:background="@drawable/random_dugme_pozadina"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/headerProfila">
+
+            <TextView
+                android:id="@+id/brojTelefona"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Broj telefona"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/gradKorisnika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Grad"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/brojTelefona" />
+
+            <TextView
+                android:id="@+id/adresaKorisnika"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20sp"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Adresa"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:paddingBottom="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gradKorisnika" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+           android:id="@+id/statistikaLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/opsteInformacije"
+            android:layout_margin="10sp"
+            android:background="@drawable/random_dugme_pozadina"
+            android:layout_height="70dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+                <LinearLayout
+                    android:id="@+id/prosekLayout"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:background="@drawable/final_rate_backround">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/prosecnaOcena"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+                        android:textColor="@color/white"
+                        android:text="4.5"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brojRecenzijaLayout"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/prosekLayout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/final_counter_backround">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/brojRecenzija"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_comment_24"
+                        android:textColor="@color/white"
+                        android:text="10"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/brojNekretninalayout"
+                    android:layout_width="80dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/brojRecenzijaLayout"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/final_house_counter_backround">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/brojNekretnina"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_baseline_house_24"
+                        android:textColor="@color/white"
+                        android:text="2"
+                        android:fontFamily="@font/gilroy_bold"
+                        android:textSize="16dp"
+                        android:padding="10dp"
+
+                        />
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+         <TextView
+             android:id="@+id/mojiOglasiText"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="20sp"
+             android:fontFamily="@font/gilroy_bold"
+             android:text="Moji oglasi"
+             android:textColor="@color/grey"
+             android:textSize="30dp"
+             app:layout_constraintBottom_toTopOf="@id/recyclerViewMojiOglasi"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/statistikaLayout" />
+
+         <TextView
+             android:id="@+id/mojiShowmore"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="20sp"
+             android:fontFamily="@font/gilroy_bold"
+             android:paddingTop="12dp"
+             android:text="Prikaži sve"
+             android:textColor="@color/cadeon"
+             android:textSize="20dp"
+             app:layout_constraintBottom_toTopOf="@id/recyclerViewMojiOglasi"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/statistikaLayout" />
+
+
+          <TextView
+              android:id="@+id/nemaOglasaTekst"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Nema oglašenih nekretnina."
+              android:textSize="20sp"
+              android:fontFamily="@font/gilroy_bold"
+              android:textAlignment="center"
+              android:padding="30dp"
+              android:visibility="invisible"
+              app:layout_constraintLeft_toLeftOf="parent"
+              app:layout_constraintRight_toRightOf="parent"
+              app:layout_constraintTop_toBottomOf="@id/mojiOglasiText"
+              />
+
+         <androidx.recyclerview.widget.RecyclerView
+             android:id="@+id/recyclerViewMojiOglasi"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:nestedScrollingEnabled="false"
+             android:orientation="horizontal"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toBottomOf="@id/mojiOglasiText"
+             tools:itemCount="1"
+             tools:listitem="@layout/item_my_property" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recyclerViewMojiOglasi"
+            >
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+   </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

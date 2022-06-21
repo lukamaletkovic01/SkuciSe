@@ -1,0 +1,48 @@
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, City, Address, "Role", FcmToken, UserAverageRating, RatingsCount) values ("admin@gmail.com", "Admin", "Admin", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111100", "Kragujevac", "Ilije Kolovica 3", 1, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, City, Address, "Role", FcmToken, UserAverageRating, RatingsCount) values ("djulakovic@gmail.com", "Dusan", "Djulakovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111110","Kragujevac", "Ilije Kolovica 3", 0, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, City, Address, "Role", FcmToken, UserAverageRating, RatingsCount) values ("luka@gmail.com", "Luka", "Maletkovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111111","Kragujevac", "Ilije Kolovica 3", 0, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, City, Address, "Role", FcmToken, UserAverageRating, RatingsCount) values ("milutinovic@gmail.com", "Aleksandar", "Milutinovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111112","Kragujevac", "Ilije Kolovica 3", 0, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, City, Address, "Role", FcmToken, UserAverageRating, RatingsCount) values ("eremic@gmail.com", "Andrija", "Eremic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111113","Kragujevac", "Ilije Kolovica 3", 0, "", 0, 0);
+--------------------------------------------------------------------------------
+insert into AdvertTypes (AdvertTypeName) values("Izdavanje");
+insert into AdvertTypes (AdvertTypeName) values("Prodaja");
+--------------------------------------------------------------------------------
+insert into Realties (RealtyTypeName) values("Kuca");
+insert into Realties (RealtyTypeName) values("Stan");
+insert into Realties (RealtyTypeName) values("Garaza");
+insert into Realties (RealtyTypeName) values("Poslovni prostor");
+insert into Realties (RealtyTypeName) values("Lokal");
+--------------------------------------------------------------------------------
+insert into FurnishedTypes (FurnishedTypeName) values("Namesteno");
+insert into FurnishedTypes (FurnishedTypeName) values("Nenamesteno");
+--------------------------------------------------------------------------------
+insert into HeatingTypes (HeatingTypeName) values("Centralno grejanje");
+insert into HeatingTypes (HeatingTypeName) values("Podno grejanje");
+insert into HeatingTypes (HeatingTypeName) values("Grejanje na gas");
+insert into HeatingTypes (HeatingTypeName) values("Bez grejanja");
+--------------------------------------------------------------------------------
+insert into OldNewBuildings (OldNewBuildingName) values("Novogradjna");
+insert into OldNewBuildings (OldNewBuildingName) values("Starogradnja");
+--------------------------------------------------------------------------------
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(1, 1, "Stan Erdoglija", 170, 2, 2, 0, 0);
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(2, 1, "Garaža 1 Izdavanje", 1300, 3, 2, 0, 0);
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(3, 2, "Kuća Trstenik", 4325, 1, 2, 0, 0);
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(4, 1, "Stan Sušica", 200, 2, 3, 0, 0);
+--------------------------------------------------------------------------------
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId, Latitude, Longitude) values ("31-Oct-21", "Karađorđeva 2", "Kragujevac", 50, 3, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Stan se nalazi u centru grada. Stan je opremljen i odmah useljiv.", "Kućni ljubimci nisu dozvoljeni", 1, 44.00414024352413, 20.89798830449581);
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId, Latitude, Longitude) values ("31-Oct-21", "Karađorđeva 2", "Kragujevac", 50, 3, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Nova garaža aerodrom.", "Nema kućni red.", 2, 44.00414024352413, 20.89798830449581);
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId, Latitude, Longitude) values ("31-Oct-21", "Karađorđeva 2", "Trstenik", 50, 3, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Luksuzna kuća, kompletno opremljena. Pozvati za više informacija.", "Obavezno održavanje dvorišta.", 3, 44.00414024352413, 20.89798830449581);
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId, Latitude, Longitude) values ("31-Oct-21", "Karađorđeva 2", "Kragujevac", 50, 3, 0, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Stan se nalazi u centru grada. Stan je opremljen i odmah useljiv.", "Kućni ljubimci nisu dozvoljeni.", 4, 44.00414024352413, 20.89798830449581);
+--------------------------------------------------------------------------------
+insert into AdvertImages('Path', AdvertId) values ("1_slika05935623549718974031.jpg", 1);
+insert into AdvertImages('Path', AdvertId) values ("1_slika17315828897426900610.jpg", 1);
+insert into AdvertImages('Path', AdvertId) values ("1_slika21208949172555164515.jpg", 1);
+insert into AdvertImages('Path', AdvertId) values ("2_slika02664657074055794118.jpg", 2);
+insert into AdvertImages('Path', AdvertId) values ("2_slika1365719653079420183.jpg", 2);
+insert into AdvertImages('Path', AdvertId) values ("3_slika07574407210120751819.jpg", 3);
+insert into AdvertImages('Path', AdvertId) values ("3_slika15013800793948490267.jpg", 3);
+insert into AdvertImages('Path', AdvertId) values ("3_slika28894787166808710944.jpg", 3);
+insert into AdvertImages('Path', AdvertId) values ("4_slika01196842510441279093.jpg", 4);
+insert into AdvertImages('Path', AdvertId) values ("4_slika12266254758225798966.jpg", 4);
+--------------------------------------------------------------------------------
+insert into Reservations (DateOfReservation, Status, AdvertId, OwnerId, UserId) values ("2021-11-22 19:23:23.1226798", 2, 1, 2, 3);

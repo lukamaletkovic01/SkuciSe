@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.ProductPageFragment">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.denzcoskun.imageslider.ImageSlider
+                android:id="@+id/slikaProizvoda"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:scaleType="fitXY"
+                app:iss_auto_cycle="true"
+                app:iss_corner_radius="5"
+                app:iss_delay="0"
+                app:iss_error_image="@android:color/darker_gray"
+                app:iss_period="1000"
+                app:iss_placeholder="@android:color/darker_gray"
+                app:iss_selected_dot="@drawable/default_selected_dot"
+                app:iss_title_background="@android:color/transparent"
+                app:iss_unselected_dot="@drawable/default_unselected_dot"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:background="@drawable/product_price_backround"
+                app:layout_constraintBottom_toBottomOf="@id/slikaProizvoda"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <TextView
+                    android:id="@+id/cenaProizvoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/naslovProizvoda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:textColor="@color/grey"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/slikaProizvoda" />
+
+            <TextView
+                android:id="@+id/adresaProizvoda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_light"
+                android:paddingLeft="20dp"
+                android:textColor="@color/grey"
+                android:textSize="25sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naslovProizvoda" />
+
+            <LinearLayout
+                android:id="@+id/ocena_proizvoda"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/final_rate_backround"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/adresaProizvoda">
+
+                <TextView
+                    android:id="@+id/ocenaProizvoda"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_baseline_star_rate_24"
+                    android:fontFamily="@font/gilroy_bold"
+                    android:padding="10dp"
+                    android:text="@string/_4_5"
+                    android:textColor="@color/white"
+                    android:textSize="16dp"
+
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/gilroy_light"
+                android:text=""
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/ocena_proizvoda"
+                app:layout_constraintLeft_toRightOf="@id/ocena_proizvoda"
+                app:layout_constraintTop_toBottomOf="@id/adresaProizvoda"
+
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient"
+                android:padding="10sp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/profilecontainer"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/round_button"
+                    android:scaleType="centerInside"
+                    app:cardCornerRadius="30dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/profile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/round_button"
+                        android:scaleType="centerInside"
+                        android:src="@color/grey" />
+                </androidx.cardview.widget.CardView>
+
+
+                <ImageButton
+                    android:id="@+id/favorites"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_baseline_favorite_border_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/profilecontainer" />
+
+                <ImageButton
+                    android:id="@+id/more"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:onClick="showMore"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/favorites" />
+
+                <ImageButton
+                    android:id="@+id/edit"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_baseline_edit_24"
+                    android:onClick="editProduct"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/more" />
+
+                <ImageButton
+                    android:id="@+id/delete"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/baseline_delete"
+                    android:onClick="deleteProduct"
+                    android:visibility="invisible"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edit" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#00000000"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.core.widget.NestedScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:fillViewport="true"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+                android:scrollbars="none"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ocena_proizvoda">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewDetailFields"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    android:orientation="horizontal"
+
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    tools:listitem="@layout/detail_field_view" />
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content">-->
+
+                <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginEnd="10dp"-->
+                <!--                        android:background="@drawable/addons_backround"-->
+                <!--                        android:drawableLeft="@drawable/ic_baseline_checkroom_24"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="3 sobe" />-->
+
+                <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginEnd="10dp"-->
+                <!--                        android:background="@drawable/addons_backround"-->
+                <!--                        android:drawableLeft="@drawable/ic_baseline_location_on_24"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="dobra lokacija" />-->
+
+                <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginEnd="10dp"-->
+                <!--                        android:background="@drawable/addons_backround"-->
+                <!--                        android:drawableLeft="@drawable/ic_baseline_wifi_24"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="wifi" />-->
+
+                <!--                    <androidx.appcompat.widget.AppCompatButton-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="40dp"-->
+                <!--                        android:layout_marginEnd="10dp"-->
+                <!--                        android:background="@drawable/addons_backround"-->
+                <!--                        android:drawableLeft="@drawable/ic_baseline_checkroom_24"-->
+                <!--                        android:padding="5dp"-->
+                <!--                        android:text="terasa" />-->
+                <!--                </LinearLayout>-->
+
+            </androidx.core.widget.NestedScrollView>
+
+
+            <com.skyhope.showmoretextview.ShowMoreTextView
+                android:id="@+id/opis_oglasa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_light"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="20dp"
+                android:textColor="@color/grey"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/scrollView" />
+
+            <View
+                android:id="@+id/linija_koja_razdvaja1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/opis_oglasa"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/oglasavacJe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="N/A"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linija_koja_razdvaja1" />
+
+            <TextView
+                android:id="@+id/ocenaKorisnika"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/zvezdica"
+                android:fontFamily="@font/gilroy_light"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/oglasavacJe"
+
+                />
+
+            <TextView
+                android:id="@+id/identitet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_baseline_check_circle_outline_24"
+                android:fontFamily="@font/gilroy_light"
+                android:paddingLeft="20dp"
+                android:paddingBottom="20dp"
+                android:text="Identitet je proveren"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ocenaKorisnika"
+
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/pogledajCeoProfil"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/review_item_backround"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Pogledaj ceo profil oglašavača"
+                android:textColor="@color/cadeon"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/identitet"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/ocenaKorisnika2"
+
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/profilecontainersecond"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_button"
+                android:scaleType="centerInside"
+                app:cardCornerRadius="80dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linija_koja_razdvaja1">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/profileSecond"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/round_button"
+                    android:scaleType="centerInside"
+                    android:src="@color/grey" />
+            </androidx.cardview.widget.CardView>
+
+
+            <TextView
+                android:id="@+id/ocenaKorisnika2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/zvezdica"
+                android:fontFamily="@font/gilroy_light"
+                android:padding="20dp"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/pogledajCeoProfil" />
+
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/recyclerViewRecenzije"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ocenaKorisnika2"
+                tools:listitem="@layout/item_raview" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/showAllComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/review_item_backround"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Prikaži sve recenzije"
+                android:textColor="@color/cadeon"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/recyclerViewRecenzije" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/addComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/review_item_backround"
+                android:fontFamily="@font/gilroy_light"
+                android:text="Ostavite recenziju"
+                android:textColor="@color/cadeon"
+                android:textSize="15sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/showAllComments" />
+
+            <TextView
+                android:id="@+id/mapaNaslov"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Lokacija nekretnine"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/addComment" />
+
+            <fragment
+                android:id="@+id/mapProduct"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mapaNaslov"
+                tools:context=".LayoutActivities.GoogleMapsActivities.GoogleMapsActivity" />
+
+            <TextView
+                android:id="@+id/kucniRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                android:drawablePadding="20dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="Kućni red"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mapProduct" />
+
+            <TextView
+                android:id="@+id/kucniRedInvisible"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/gilroy_light"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/kucniRed" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dugme_zakazi"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:padding="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/zakazi_razgledanje_pozadina"
+        android:text="@string/zakazi_razgledanje"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy_bold"
+        />
+
+</RelativeLayout>

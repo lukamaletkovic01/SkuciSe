@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".LayoutActivities.ReservationActivities.ReceivedReservations.ReservationOnHoldFragment">
+    <TextView
+        android:id="@+id/nemaOglasaTekst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nema rezervacija."
+        android:textSize="20sp"
+        android:fontFamily="@font/gilroy_bold"
+        android:textAlignment="center"
+        android:padding="30dp"
+        android:visibility="invisible"
+        />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewReceivedReservations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:itemCount="1"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/item_received_reservation"
+            android:nestedScrollingEnabled="false"
+            />
+
+
+
+</FrameLayout>

@@ -1,0 +1,39 @@
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("admin@gmail.com", "Admin", "Admin", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111100", 1, "", 3.0, 1);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("djulakovic@gmail.com", "Dusan", "Djulakovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111110", 0, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("luka@gmail.com", "Luka", "Maletkovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111111", 0, "", 0, 0);
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("milutinovic@gmail.com", "Aleksandar", "Milutinovic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111112", 0, "", 0, 0);
+<<<<<<< HEAD
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("eremic@gmail.com", "Andrija", "Eremic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111113", 0, "", 0, 0);
+=======
+insert into Users (Email, Firstname, Lastname, Password, ProfileImage, PhoneNumber, "Role", FcmToken, UserAverageRating, RatingsCount) values ("eremic@gmail.com", "Andrija", "Eremic", "7772797ac7b01015d655bd7caa7d75ebe37ea5a9", "default.jpg", "0611111113", 0, "", 3.0, 1);
+>>>>>>> adverts
+--------------------------------------------------------------------------------
+insert into AdvertTypes (AdvertTypeName) values("Izdavanje");
+insert into AdvertTypes (AdvertTypeName) values("Prodaja");
+--------------------------------------------------------------------------------
+insert into Realties (RealtyTypeName) values("Kuca");
+insert into Realties (RealtyTypeName) values("Stan");
+insert into Realties (RealtyTypeName) values("Garaza");
+insert into Realties (RealtyTypeName) values("Poslovni prostor");
+insert into Realties (RealtyTypeName) values("Lokal");
+--------------------------------------------------------------------------------
+insert into FurnishedTypes (FurnishedTypeName) values("Namesteno");
+insert into FurnishedTypes (FurnishedTypeName) values("Nenamesteno");
+--------------------------------------------------------------------------------
+insert into HeatingTypes (HeatingTypeName) values("Centralno grejanje");
+insert into HeatingTypes (HeatingTypeName) values("Podno grejanje");
+insert into HeatingTypes (HeatingTypeName) values("Grejanje na gas");
+insert into HeatingTypes (HeatingTypeName) values("Bez grejanja");
+--------------------------------------------------------------------------------
+insert into OldNewBuildings (OldNewBuildingName) values("Novogradjna");
+insert into OldNewBuildings (OldNewBuildingName) values("Starogradnja");
+--------------------------------------------------------------------------------
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(1, 1, "Garaza 1 Izdavanje", 1300, 3, 5, 3.0, 1);
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(2, 2, "Garaza 2 Prodaja", 1345, 3, 1, 0.0, 0);
+insert into Adverts(AdvertDetailsId, AdvertTypeId, Name, Price, RealtyTypeId, UserId, AdvertAverageRating, RatingsCount) values(3, 2, "Garaza 3 Prodaja", 130, 3, 2, 0.0, 0);
+--------------------------------------------------------------------------------
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId) values ("31-Oct-21", "Aerodrom", "Kragujevac", 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Nova garaza aerodrom", "Nema kucni red", 1);
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId) values ("31-Oct-21", "Aerodrom", "Kragujevac", 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Nova garaza aerodrom", "Nema kucni red", 2);
+insert into AdvertDetails(Date, Township, City, SquaredArea, BedroomNumber, Terrace, Parking, Wifi, Tv, AirCondition, Kitchen, Bathroom, Alarm, Pool, Barbecue, FirePlace, Gym, FloorNumber, FurnishedTypeId, HeatingTypeId, OldNewBuildingId, Description, HouseOrder, AdvertId) values ("31-Oct-21", "Aerodrom", "Kragujevac", 14, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 2, 4, 1, "Nova garaza aerodrom", "Nema kucni red", 3);
+--------------------------------------------------------------------------------
+insert into Comments (Content, Rating, DatePublished, UserId, AdvertId) values("Komentar prvi", 3.0, DATE('now'), 2, 1)

@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivities.Search.SearchFiltersActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/topToolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                app:layout_constraintBottom_toTopOf="@id/naslov0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/backDugme"
+                    android:layout_width="wrap_content"
+                    android:onClick="redirectHome"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24_black" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/naslov0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Tip oglašavanja"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/topToolbar" />
+
+            <View
+                android:id="@+id/linija_koja_razdvaja1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/naslov0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <RelativeLayout
+                android:id="@+id/layoutIzdavanje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naslov0">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Izdavanje"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_izdavanje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutProdaja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutIzdavanje">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Prodaja"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_prodaja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/naslov1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Tip nekrenitne"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutProdaja" />
+
+            <RelativeLayout
+                android:id="@+id/layoutKuca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naslov1">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Kuća"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_kuca"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutStan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutKuca">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Stan"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_stan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutGaraza"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutStan">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Garaža"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_garaza"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutParking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutGaraza">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Parking mesto"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_parking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutPoslovni"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutParking">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Poslovni prostor"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_poslovni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/naslov2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Raspon cena"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutPoslovni" />
+
+            <View
+                android:id="@+id/linija_koja_razdvaja2"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/naslov1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <View
+                android:id="@+id/linija_koja_razdvaja3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/naslov2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <View
+                android:id="@+id/linija_koja_razdvaja4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/naslov3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+            <View
+                android:id="@+id/linija_koja_razdvaja5"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/cadeon"
+                app:layout_constraintBottom_toBottomOf="@id/naslovGradovi"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <TextView
+                android:id="@+id/rasponCena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:padding="10sp"
+                android:text="0€ - 2000€"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naslov2" />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rangeSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20sp"
+                android:stepSize="100"
+                android:valueFrom="0.0"
+                android:valueTo="3000.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rasponCena"
+                app:values="@array/rasponCena" />
+
+            <TextView
+                android:id="@+id/naslovGradovi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Grad"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rangeSlider" />
+
+            <Spinner
+                android:id="@+id/SpinnerGradovi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="20dp"
+                android:prompt="@string/hint_resource"
+                android:spinnerMode="dialog"
+                app:layout_constraintTop_toBottomOf="@id/naslovGradovi" />
+
+            <TextView
+                android:id="@+id/naslov3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/gilroy_bold"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Dodatni sadržaji"
+                android:textColor="@color/grey"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/SpinnerGradovi" />
+
+            <RelativeLayout
+                android:id="@+id/layoutWifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/naslov3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="WiFi"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_wifi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutWifi">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="TV"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTerasa"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutTV">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Terasa"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_terasa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutKlima"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutTerasa">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Klima"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_klima"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutKuhinja"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutKlima">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Kuhinja"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_kuhinja"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutParking2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutKuhinja">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Parking"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_parkingLot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutKupatilo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutParking2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Kupatilo"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_kupatilo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutAlarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutKupatilo">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Alarm"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_alarm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutBazen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutAlarm">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Bazen"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_bazen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutRostilj"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutBazen">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Roštilj"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_rostilj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutKamin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutRostilj">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Kamin"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_kamin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layoutTeretana"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingBottom="100dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/layoutKamin">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:fontFamily="@font/gilroy_light"
+                    android:gravity="left"
+                    android:text="Teretana"
+                    android:textColor="@color/grey"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbFilter_teretana"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="20sp"
+                    android:gravity="right"
+                    android:layoutDirection="rtl" />
+            </RelativeLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/primeniFiltere"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/zakazi_razgledanje_pozadina"
+        android:fontFamily="@font/gilroy_bold"
+        android:padding="20dp"
+        android:text="Primeni filtere"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="20sp"  />
+
+</RelativeLayout>

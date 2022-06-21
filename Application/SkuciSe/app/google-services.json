@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "408943860030",
+    "project_id": "skucise-ade55",
+    "storage_bucket": "skucise-ade55.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:408943860030:android:ff5e005d2d101e4ca1746f",
+        "android_client_info": {
+          "package_name": "com.example.skucise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "408943860030-qvnb5ma8f4cl2upj9cb14ub45jghekmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuiCc4WRxA01bogpAi_m_afB8AUuJEQJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "408943860030-qvnb5ma8f4cl2upj9cb14ub45jghekmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

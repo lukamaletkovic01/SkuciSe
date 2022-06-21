@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LayoutActivities.SettingsActivities.SettingsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:padding="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/backDugme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/todo"
+                android:onClick="redirectHome"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24_black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/gilroy_bold"
+                android:text="@string/pode_avanja"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/lozinka"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="15dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/gilroy_light"
+            android:text="Promenite lozinku"
+            android:onClick="redirectChangePassword"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topToolbar"
+            app:drawableStartCompat="@drawable/ic_baseline_vpn_key_24"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+        <View
+            android:id="@+id/linija_koja_razdvaja1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="@id/lozinka"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/podrska"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:paddingBottom="15dp"
+            android:drawablePadding="20dp"
+            android:fontFamily="@font/gilroy_light"
+            android:onClick="redirectReportProblem"
+            android:text="Prijavite problem"
+            android:textColor="@color/black"
+            android:textSize="23sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linija_koja_razdvaja1"
+            app:drawableStartCompat="@drawable/ic_baseline_report_problem_24"
+            app:drawableRightCompat="@drawable/ic_baseline_keyboard_arrow_down_24" />
+        <View
+            android:id="@+id/linija_koja_razdvaja3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@color/lightGrey"
+            app:layout_constraintBottom_toBottomOf="@id/podrska"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
